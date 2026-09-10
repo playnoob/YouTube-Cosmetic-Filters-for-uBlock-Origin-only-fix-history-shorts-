@@ -1,0 +1,24 @@
+! Title: YouTube Cosmetic Filters - Optional Filters
+! Description: Cleaned and updated optional cosmetic filters for uBlock Origin.
+! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-
+
+! === Optional Buttons & Badges ===
+! Hide Join / Sponsor Buttons on Channels
+www.youtube.com##ytd-button-renderer:has(a[href*="/join"])
+
+! Hide Like Count under videos (Modern UI)
+www.youtube.com##like-button-view-model .yt-spec-button-shape-next__button-text-content
+
+! Hide Music Secondary Container in Search
+www.youtube.com###contents > ytd-secondary-search-container-renderer
+
+! Hide Premium / Paid Content Badges in Home Grid
+www.youtube.com##ytd-rich-item-renderer:has(.badge-shape-wiz--premium)
+www.youtube.com##ytd-search ytd-video-renderer:has(.badge-shape-wiz--premium)
+
+! === Shorts Filters (Search Results Only) ===
+! Hide Shorts Shelf from search results
+www.youtube.com##ytd-search ytd-reel-shelf-renderer
+
+! Hide individual Shorts videos mistakenly appearing in main search grid
+www.youtube.com##ytd-search ytd-video-renderer:has(a[href*="/shorts/"])
