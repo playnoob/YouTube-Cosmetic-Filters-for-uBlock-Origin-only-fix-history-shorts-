@@ -1,6 +1,6 @@
 ! Title: YouTube Cosmetic Filters - Optional Filters
 ! Description: Cleaned and updated optional cosmetic filters for uBlock Origin.
-! Home: https://github.com/Onsotumenh/YouTube-Cosmetic-Filters-for-uBlock-Origin
+! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-
 
 ! === Optional Buttons & Badges ===
 ! Hide Join / Sponsor Buttons on Channels
