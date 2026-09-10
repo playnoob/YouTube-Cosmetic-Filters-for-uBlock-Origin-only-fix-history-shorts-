@@ -1,29 +1,34 @@
-! Title:  YouTube-Cosmetic-Filters-for-uBlock-Origin - Search results only
-! Description: Cosmetic filters to improve the search results.
+! Title: YouTube-Cosmetic-Filters-for-uBlock-Origin - Search results only
+! Description: Cosmetic filters to improve search results without hiding Shorts or breaking Watch History.
 ! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-
 
-! Search Results
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/For you/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/People also watched/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Previously watched/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related to your search/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related Movies/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/New for you/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Channels new to you/i))
+! Search Results Shelves (English & Arabic)
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/For you|من أجلك/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/People also watched|شاهدها آخرون|المشاهدون شاهدوا أيضاً/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Previously watched|تمت مشاهدتها سابقاً/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related to your search|ذات صلة ببحثك/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related Movies|أفلام ذات صلة/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/New for you|جديد بالنسبة إليك/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Channels new to you|قنوات جديدة عليك/i))
 www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related chapters/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Explore more/i))
-www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Latest from/i))
-www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Results for similar searches/i))
-www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/From related searches/i)
-www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/From health sources/i)
-www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(/People also search for/i)
-www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(/Searches related to/i)
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Explore more|استكشاف المزيد/i))
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Latest from|أحدث المحتويات من/i))
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Results for similar searches|نتائج عمليات البحث المشابهة/i))
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/From related searches|من عمليات البحث ذات الصلة/i)
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/From health sources|من مصادر صحية/i)
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/Latest Posts From|أحدث المشاركات من/i)
+
+! Horizontal Card Lists
+www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(/People also search for|يبحث الأشخاص أيضاً عن/i)
+www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(/Searches related to|عمليات بحث ذات صلة/i)
 www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(/Related chapters/i)
+
+! Movies, Paid Content & Ads
 www.youtube.com##ytd-movie-renderer.ytd-item-section-renderer.style-scope
-www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has-text(/Latest Posts From/i)
 www.youtube.com###about-these-results
 www.youtube.com##.ytd-item-section-renderer.style-scope > .ytd-ad-slot-renderer.style-scope
 www.youtube.com##grid-shelf-view-model.ytGridShelfViewModelHostHasBottomButton.ytd-item-section-renderer.ytGridShelfViewModelHost
-www.youtube.com##ytd-video-renderer.ytd-item-section-renderer.style-scope:has-text(Pay to watch)
+www.youtube.com##ytd-video-renderer.ytd-item-section-renderer.style-scope:has-text(/Pay to watch|الدفع للمشاهدة/i)
+
 ! Crisis Resource Panel
 www.youtube.com##ytd-emergency-onebox-renderer.ytd-item-section-renderer.style-scope > .ytd-emergency-onebox-renderer.style-scope
