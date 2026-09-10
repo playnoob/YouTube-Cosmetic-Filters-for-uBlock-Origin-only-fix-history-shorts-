@@ -1,0 +1,44 @@
+! Title: YouTube Cosmetic Filters - Video and Channel Page
+! Description: Cleaned and optimized filters for Video and Channel pages.
+! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-
+
+! === Video Page: Paid Content & Promotions ===
+! Hide Super Chat & Paid Comments Highlights
+www.youtube.com##ytd-paid-comment-renderer
+www.youtube.com###paid-comment-images
+www.youtube.com###paid-comment-chip
+www.youtube.com###paid-comment-background
+
+! Hide Ticket Shelf (Concerts / Events) & Merch Shelf under videos
+www.youtube.com###ticket-shelf
+www.youtube.com##ytd-merch-shelf-renderer
+
+! Hide AI-generated summary/metadata (Multi-language)
+www.youtube.com###expandable-metadata:has-text(/AI-generated|توليد بواسطة الذكاء الاصطناعي|الذكاء الاصطناعي/i)
+www.youtube.com###video-summary
+
+! Hide Fullscreen Grid Overlay Stills
+www.youtube.com##.ytp-fullscreen-grid-stills-container
+
+! Hide Popups for Channel Membership / Join
+www.youtube.com###contentWrapper > .ytd-popup-container:has-text(/Membership|الانتساب|عضوية/i)
+
+! === Video Page: Sidebar & Related Content ===
+! Hide Related Topic Chips Cloud above side recommendations
+www.youtube.com###content > .yt-related-chip-cloud-renderer
+
+! Hide Entire Related Videos Sidebar (Optional - Keep only if you want no side suggestions)
+! www.youtube.com##ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer
+
+! === Channel Page Filters ===
+! Hide Posts shelf on Channel pages
+www.youtube.com##ytd-shelf-renderer:has-text(/Posts|المشاركات|المنتدى/i)
+
+! Hide Posts Tab from Channel Menu (Multi-language)
+www.youtube.com##yt-tab-shape:has-text(/Posts|المشاركات|المنتدى/i)
+
+! Hide Store / Shop Tab from Channel Menu (Multi-language)
+www.youtube.com##yt-tab-shape:has-text(/Store|Shop|المتجر/i)
+
+! Hide Members-Only Content Grid items
+www.youtube.com##ytd-rich-item-renderer:has-text(/Members only|حصر للأعضاء|للمنتسبين/i)
