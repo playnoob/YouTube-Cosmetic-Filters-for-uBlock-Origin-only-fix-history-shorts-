@@ -20,8 +20,9 @@ www.youtube.com###video-summary
 ! Hide Fullscreen Grid Overlay Stills
 www.youtube.com##.ytp-fullscreen-grid-stills-container
 
-! Hide Popups for Channel Membership / Join
-www.youtube.com###contentWrapper > .ytd-popup-container:has-text(/Membership|الانتساب|عضوية/i)
+! Hide Popups for Channel Membership / Join (Specific elements fix)
+www.youtube.com##ytd-membership-offer-renderer
+www.youtube.com##ytd-sponsorships-offer-renderer
 
 ! === Video Page: Sidebar & Related Content ===
 ! Hide Related Topic Chips Cloud above side recommendations
