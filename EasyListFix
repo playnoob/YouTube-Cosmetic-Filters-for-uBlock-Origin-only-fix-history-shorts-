@@ -4,7 +4,7 @@
 -ad-sidebar.$image
 -ad.jpg.pagespeed.$image
 -ads-manager/$domain=~wordpress.org
--ads/assets/$script,domain=~web-ads.org
+-ads/assets/$~script,domain=~web-ads.org
 -assets/ads.$~script
 -banner-ads-$~script
 -contrib-ads.$~stylesheet
