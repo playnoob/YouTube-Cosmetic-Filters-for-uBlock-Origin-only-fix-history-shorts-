@@ -1,3 +1,7 @@
+! Title: EasyListFix Custom
+! Description: Optimized and fixed custom adblock filters list.
+! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-/blob/main/EasyListFix
+
 &rb=&uuid=$third-party
 &subaffid=%$subdocument,third-party
 -ad-manager/$~stylesheet
