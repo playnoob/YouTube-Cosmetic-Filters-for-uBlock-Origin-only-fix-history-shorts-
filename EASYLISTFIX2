@@ -1,0 +1,54 @@
+! Title: EasyListFix Custom (Cleaned)
+! Description: Cleaned version - removed generic/duplicate/CPU-heavy rules
+! Home: https://github.com/playnoob/YouTube-Cosmetic-Filters-for-uBlock-Origin-only-fix-history-shorts-/blob/main/EasyListFix
+
+! ===== Removed =====
+! - The broken "://" rule (matched every URL)
+! - Generic rules without $domain (ran on every site)
+! - Wildcard-heavy rules (*?n=, *.js?key=, etc.)
+! - Rules duplicating EasyList defaults
+! - Rules with overly long domain=~... exceptions
+! - The ".com/*=bT1zdXY1JnI9" rule (unclear + broad)
+
+! ===== Kept (high value, low CPU) =====
+&rb=&uuid=$third-party
+&subaffid=%$subdocument,third-party
+-ad-manager/$~stylesheet,domain=~wordpress.org
+-ads-manager/$domain=~wordpress.org
+.club/js/popunder.js$script
+.com/1784b8bs/
+.com/b.js|
+.com/bn.js$third-party
+.com/exload.js
+.com/api/posts?token=$third-party
+.com/smartpop/$third-party
+.lol/js/pub.min.js$third-party
+.lol/sw.js$third-party
+/ad-server.$~script
+/ad_728.js$script
+/ad_bottom.js$script
+/ad_header.js$script
+/ad_top.jpg$image
+/adanalytics.js$script
+/adengine.js$script
+/adfox/loader.js$script
+/admanager.js$script
+/admanager.min.js$script
+/admgr.js$script
+/admitad.js$script
+/adocean.js$script
+/adpartner.min.js$script
+/adrecover-new.js$script
+/adrecover.js$script
+/ads-controller.js$script
+/adsAPI.js$script
+/adscontroller.js$script
+/adscroll.js$script
+/adsforwp-front.min.css$stylesheet
+/adslide.js$script
+/adsmanager.css$stylesheet
+/adsscript.$script
+/adtools.js$script
+/adutil.js$script
+/adv_vert.js$script
+/adz/js/adz.$script
